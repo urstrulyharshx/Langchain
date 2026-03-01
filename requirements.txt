@@ -1,0 +1,9 @@
+langchain
+langchain-core
+langchain-community
+pypdf
+pymupdf
+python-dotenv
+openai
+google-generativeai
+groq

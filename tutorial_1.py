@@ -1,12 +1,34 @@
-from langchain_openai import ChatOpenAI
-from langchain_core.messages import HumanMessage
+from groq import Groq
+# Make sure your config.py has GROQ_API_KEY defined
 from config import Config
 
-print("Using OpenAI API Key:", Config.OPENAI_API_KEY)
-llm = ChatOpenAI(model="gpt-4o-mini", temperature=0, api_key=Config.OPENAI_API_KEY)
+# Initialize the Groq client
+client = Groq(api_key=Config.GROQ_API_KEY)
 
-response = llm([
-    HumanMessage(content="Explain closures in JavaScript in 2 lines")
-])
+def generate_text_with_groq(prompt):
+    try:
+        # Groq uses the 'chat.completions' pattern
+        chat_completion = client.chat.completions.create(
+            messages=[
+                {
+                    "role": "user",
+                    "content": prompt,
+                }
+            ],
+            # Recommended fast models: 
+            # 'llama-3.3-70b-versatile' or 'llama-3.1-8b-instant'
+            model="llama-3.3-70b-versatile",
+        )
+        return chat_completion.choices[0].message.content
 
-print(response.content)
+    except Exception as e:
+        return f"An error occurred: {str(e)}"
+
+# Execution
+if __name__ == "__main__":
+    user_prompt = "Explain closures in JavaScript in 2 lines"
+    
+    print("--- Requesting Groq (Llama 3.3) ---")
+    result = generate_text_with_groq(user_prompt)
+    print("\nResult:")
+    print(result)

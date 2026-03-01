@@ -1,0 +1,37 @@
+Company Internal Policy Document
+
+This document describes the internal policies of Acme Tech Solutions.
+It is intended for employees, contractors, and interns.
+
+1. Working Hours
+The standard working hours are from 9:30 AM to 6:30 PM, Monday to Friday.
+Employees are expected to be available during core hours between 11:00 AM
+and 4:00 PM. Flexible working hours may be approved by the manager.
+
+2. Work From Home Policy
+Employees are allowed to work from home up to two days per week.
+Any additional work from home days require prior manager approval.
+Remote work is subject to performance and project requirements.
+
+3. Leave Policy
+Employees are entitled to 20 paid leaves per year.
+Unused leaves can be carried forward up to a maximum of 10 days.
+Sick leave does not require prior approval but must be informed
+to the reporting manager on the same day.
+
+4. Code of Conduct
+All employees must maintain professional behavior at the workplace.
+Harassment, discrimination, or unethical behavior will not be tolerated
+and may result in disciplinary action, including termination.
+
+5. Data Security
+Confidential company data must not be shared with external parties.
+Employees must use company-approved devices and secure networks
+when accessing internal systems.
+
+6. Exit Policy
+Employees must serve a notice period of 30 days.
+Company assets must be returned on or before the last working day.
+Final settlement will be processed within 45 days after exit.
+
+End of Document
